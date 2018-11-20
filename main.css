@@ -1,0 +1,304 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* navigation */
+#top {
+    height: 3.5rem;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: -10px;
+    z-index: 1;
+}
+
+#top li {
+    list-style: none;
+    display: inline-block;
+    margin: 3px 15px;
+    float: right;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.7%;
+}
+
+ #top li:hover {
+     background-color: rgb(203, 177, 209);
+     border: medium dashed purple;
+ }
+
+a {
+    color: rgb(82, 78, 78);
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple; 
+}
+
+/*zajawka*/
+#zajawka {
+   background: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940) no-repeat;
+   background-size: cover;
+   height: 30rem;
+   margin: 6% 0 3%;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(82, 78, 78);
+    padding: 4rem 4rem 0 4rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding: 0 4rem 4rem 4rem;
+    color: purple;
+}
+
+#zajawka img {
+   position: relative;
+   left: 70%;
+   bottom: 4rem;
+}
+
+/*about-me*/
+#about-me h2 {
+    color: rgb(82, 78, 78);
+    border: medium dashed purple;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.img-container {
+  width: 33%;
+  height: 30rem; 
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 2% 2% 2% 5%;
+  display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    display: inline-block;
+    width: 40%;
+    border: medium solid rgb(82, 78, 78);
+    height: 26rem;
+    float: right;
+    margin: 2% 5% 2% 2%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/*hobbies*/
+#hobbies h2 {
+    color: rgb(82, 78, 78);
+    border: medium dashed purple;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-left: 5%
+}
+
+#hobbies li {
+   padding: 0.5rem;
+   font-size: 1.2rem;
+   margin-left: 3%;
+}
+
+.gallery {
+   width: 100%;
+}
+
+.gallery img {
+    width: 23%;
+    height: 12rem;
+    position: relative;
+    left: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+/*skills*/
+#skills h2 {
+    color: rgb(82, 78, 78);
+    border: medium dashed purple;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+#skills p {
+    margin: 3rem 5rem 0;
+    font-size: 1.2rem;
+}
+
+#skills img {
+   width: 50%;
+   height: auto;
+   position: relative;
+   left: 22%;
+}
+
+/*projects*/
+#projects h2 {
+    color: rgb(82, 78, 78);
+    border: medium dashed purple;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+ol li {
+   height: 3rem;
+}
+
+ol a {
+    font-size: 1.5rem;
+    margin: 2%;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(203, 177, 209);
+    background-size: cover;
+}
+
+footer p {
+    display: inline-block;
+    padding: 0 8%;
+}
+
+.fb img {
+    max-height: 4%;
+    max-width: 4%;
+    display: inline-block;
+    padding: 0 8%;
+    position: relative;
+    top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    #top {
+        display: none;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #zajawka {
+        margin: 0;
+        background-position: center;
+    }
+    #zajawka img {
+        position: relative;
+        left: 40%;
+        bottom: 4rem;
+    }
+    #about-me h2 {
+        font-size: 1rem;
+        padding-top: 2%;
+    }
+    #hobbies h2 {
+        font-size: 1rem;
+        padding-top: 2%;
+    }
+    #skills h2 {
+        font-size: 1rem;
+        padding-top: 2%;
+    }
+    #projects h2 {
+        font-size: 1rem;
+        padding-top: 2%;
+    }
+    .img-container {
+        width: 20%;
+        height: auto; 
+        overflow: hidden;
+        border-radius: 40%;
+        display: inline-block;
+    }
+    .about-text {
+        display: inline-block;
+        width: 63%;
+        border: thin solid rgb(82, 78, 78);
+        height: 16vmax;
+        float: right;
+        padding: 1%;
+        border-radius: 10px;
+        overflow: scroll;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    #hobbies li {
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    .gallery img {
+        width: 23%;
+        height: 10vmax;
+        margin: 0;
+        position: relative;
+        left: 2%;
+    }
+    #skills p {
+        margin: 2%;
+        font-size: 1rem;
+    }
+    ol a {
+        font-size: 1.2rem;
+        margin: 2%;
+    }
+    footer p {
+        display: block;
+        padding: 0.5%;
+        text-align: center;
+    }
+    .fb img {
+        max-height: 5vmax;
+        max-width: 5vmax;
+        display: block;
+        padding: 0% 45% 6%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1024) {
+    .img-container {
+        height: 38vmax;   
+    }
+    .about-text {
+        height: 30vmax;
+    }
+    .gallery img {
+        width: 23%;
+        height: 15vmax;
+    }
+    footer p {
+        display: inline-block;
+        padding: 1%;
+    }    
+    .fb img {
+        max-height: 3vmax;
+        max-width: 3vmax;
+        display: inline-block;
+        padding: 1%;
+        position: relative;
+        left: 15vmax;
+    } 
+}
